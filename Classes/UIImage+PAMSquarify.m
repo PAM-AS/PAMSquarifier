@@ -20,8 +20,8 @@
     CGRect imagePosition = CGRectMake(xOffset, yOffset, self.size.width, self.size.height);
     
     UIGraphicsBeginImageContext(canvas);
-    [[UIColor whiteColor] setFill];
-    [[UIBezierPath bezierPathWithRect:CGRectMake(0, 0, canvas.width, canvas.height)] fill];
+    [[UIColor whiteColor] set];
+    UIRectFill(CGRectMake(0, 0, canvas.width, canvas.height));
     [self drawInRect:imagePosition];
     UIImage *result = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
