@@ -1,0 +1,14 @@
+PODS:
+  - PAMSquarifier (0.0.2)
+
+DEPENDENCIES:
+  - PAMSquarifier (from `../`)
+
+EXTERNAL SOURCES:
+  PAMSquarifier:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PAMSquarifier: ed6acf4641f6c0e39adb6290e8491d375e5da956
+
+COCOAPODS: 0.35.0
