@@ -10,6 +10,6 @@
 
 @interface UIImage (PAMSquarify)
 
-- (UIImage *)squarify;
+- (UIImage *)squareRepresentation;
 
 @end

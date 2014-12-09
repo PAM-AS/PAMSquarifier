@@ -10,7 +10,7 @@
 
 @implementation UIImage (PAMSquarify)
 
-- (UIImage *)squarify {
+- (UIImage *)squareRepresentation {
     CGFloat squared = MAX(self.size.width, self.size.height);
     CGSize canvas = CGSizeMake(squared, squared);
     

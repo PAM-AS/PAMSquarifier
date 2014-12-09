@@ -27,7 +27,7 @@
 }
 
 - (IBAction)squarify:(id)sender {
-    self.imageView.image = [self.imageView.image squarify];
+    self.imageView.image = [self.imageView.image squareRepresentation];
 }
 
 @end
