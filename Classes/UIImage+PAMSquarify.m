@@ -11,11 +11,11 @@
 @implementation UIImage (PAMSquarify)
 
 - (UIImage *)squareRepresentation {
-    CGFloat squared = MAX(self.size.width, self.size.height);
-    CGSize canvas = CGSizeMake(squared, squared);
+    CGFloat max = MAX(self.size.width, self.size.height);
+    CGSize canvas = CGSizeMake(max, max);
     
-    CGFloat xOffset = self.size.width < squared ? (squared - self.size.width) / 2 : 0;
-    CGFloat yOffset = self.size.height < squared ? (squared - self.size.height) / 2 : 0;
+    CGFloat xOffset = self.size.width < max ? (max - self.size.width) / 2 : 0;
+    CGFloat yOffset = self.size.height < max ? (max - self.size.height) / 2 : 0;
     
     CGRect imagePosition = CGRectMake(xOffset, yOffset, self.size.width, self.size.height);
     
